@@ -137,7 +137,7 @@ namespace seneca_project
                             { //loops to build the rooms
                                 house.buildRoom();
                             }
-                            Console.WriteLine("The house has " + house.numRooms);
+                            Console.WriteLine($"The house has {house.numRooms} rooms"); //note the string interpolation - you don't have to add multiple things together
                         }
 
                     }
