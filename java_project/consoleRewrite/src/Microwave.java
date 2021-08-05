@@ -6,7 +6,7 @@ public class Microwave {
         // this.power = power;
     }
     public void increaseTemp(int temp) {
-        temperature += temp;
+        temperature = temperature + temp;
     }
     public void turnOn() {
         power = true;
