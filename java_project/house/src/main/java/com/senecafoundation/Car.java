@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Car {
     public Boolean isDoorOpen;
     public int rpms;
