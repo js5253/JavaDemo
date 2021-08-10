@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 
- Public class RoomTest {
+ public class RoomTest {
 
     private Room systemUnderTest;
 
@@ -16,8 +16,9 @@ import org.junit.jupiter.api.BeforeEach;
     @Test
     void testRooms() {
         this.systemUnderTest.renovate();
-        assertEquals(this.systemUnderTest.y, true);
-        this.systemUnderTest.();
-        assertEquals(this.systemUnderTest.n, false);
+        assertEquals (this.systemUnderTest.y, true);
+        assertEquals (this.systemUnderTest.n, false);
     }
-    
+}
+
+
