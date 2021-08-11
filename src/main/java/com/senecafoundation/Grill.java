@@ -1,10 +1,10 @@
 package com.senecafoundation;
 
-public class Grill {
+public class Grill implements Grillinterface {
     public int temperature;
     public boolean power;
 
-    public Grill implements Grillinterface () {
+    public Grill () {
         // temperature = temp;
         // power = false;
     }
