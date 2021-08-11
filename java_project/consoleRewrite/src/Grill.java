@@ -1,5 +1,3 @@
-package com.senecafoundation;
-
 public class Grill {
     public int temperature;
     public boolean power;
