@@ -1,8 +1,11 @@
-import java.io.Console;
-import java.util.Scanner;
+package com.senecafoundation;
 
-public class App {
-    public static void main(String[] args) throws Exception {
+import java.io.Console;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
         Car car = new Car();
         Grill grill = new Grill();
         Microwave microwave = new Microwave();
@@ -43,5 +46,4 @@ public class App {
             }
         }
     }
-
 }

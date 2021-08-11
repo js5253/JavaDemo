@@ -1,3 +1,5 @@
+package com.senecafoundation;
+
 public class Microwave {
     public int temperature;
     public boolean power;
