@@ -4,7 +4,7 @@ public class Grill {
     public int temperature;
     public boolean power;
 
-    public Grill() {
+    public Grill implements Grillinterface () {
         // temperature = temp;
         // power = false;
     }
