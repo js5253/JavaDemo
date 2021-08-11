@@ -1,0 +1,15 @@
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.csproj.AssemblyReference.cache
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.AssemblyInfoInputs.cache
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.AssemblyInfo.cs
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.csproj.CoreCompileInputs.cache
+/Users/jose/seneca-project/bin/Debug/net5.0/seneca-project.deps.json
+/Users/jose/seneca-project/bin/Debug/net5.0/seneca-project.runtimeconfig.json
+/Users/jose/seneca-project/bin/Debug/net5.0/seneca-project.runtimeconfig.dev.json
+/Users/jose/seneca-project/bin/Debug/net5.0/seneca-project.dll
+/Users/jose/seneca-project/bin/Debug/net5.0/ref/seneca-project.dll
+/Users/jose/seneca-project/bin/Debug/net5.0/seneca-project.pdb
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.dll
+/Users/jose/seneca-project/obj/Debug/net5.0/ref/seneca-project.dll
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.pdb
+/Users/jose/seneca-project/obj/Debug/net5.0/seneca-project.genruntimeconfig.cache

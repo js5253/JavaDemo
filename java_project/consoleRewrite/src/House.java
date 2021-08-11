@@ -1,5 +1,3 @@
-package com.senecafoundation;
-
 public class House {
     public int numRooms;
 
