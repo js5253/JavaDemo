@@ -1,6 +1,6 @@
 package com.senecafoundation;
 
-public class Car {
+public class Car implements CarInterface {
     public Boolean isDoorOpen;
     public int rpms;
 
