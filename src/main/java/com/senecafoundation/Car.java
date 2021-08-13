@@ -4,10 +4,16 @@ public class Car {
     private Boolean isDoorOpen;
     private int rpms;
     private int windows;
+    private int maxRPM = 200;
+    
+    public int getMaxRPM() {
+        return maxRPM;
+    }
 
     public void setWindows(int windows) {
         this.windows = windows;
     }
+
     public int getWindows() {
         return windows;
     }
@@ -24,7 +30,7 @@ public class Car {
     }
 
     public void setRpms(int rpms) {
-        if (rpms > 200) {
+        if (rpms > this.maxRPM) {
             System.out.println("That's too many rpms, it would break the car");
             this.rpms = 0; 
         }
@@ -33,14 +39,16 @@ public class Car {
         }
     }
 
-    public Car(int rpmFromUser, Boolean isDoorOpenFromUser, int windowsFromUser) {
+    public Car(int rpmFromUser, Boolean isDoorOpenFromUser, int windowsFromUser, int maxRPMFromUser) {
         this.rpms = rpmFromUser;
         this.isDoorOpen = isDoorOpenFromUser;
         this.windows = windowsFromUser;
+        this.maxRPM = maxRPMFromUser;
     }
 
     public void increaseRpm(int rpmfromuser) {
         this.rpms += rpmfromuser;
+    }
 
     public void decreaseRpm(int rpmfromuser) {
         this.rpms -= rpmfromuser;
@@ -59,6 +67,6 @@ public class Car {
         System.out.println("Car Details");
         System.out.println("RPM: " + rpms);
         System.out.println("Door Open: " + isDoorOpen);
-        System.out.println("This car's max RPMs: " + MAX_RPM);
+        System.out.println("This car's max RPMs: " + this.maxRPM);
     }
 }

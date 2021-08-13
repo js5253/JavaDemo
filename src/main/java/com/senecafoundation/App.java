@@ -6,7 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Car car = new Car(100, true, 2);
+        Car car = new Car(100, true, 2, 200); //in the future, this could change to a Tesla or Ferrari
         Grill grill = new Grill();
         Microwave microwave = new Microwave();
         House house = new House();
