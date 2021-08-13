@@ -1,7 +1,14 @@
 package com.senecafoundation;
 
 public class House {
-    public int numRooms;
+    private int numRooms;
+
+    public int getNumRooms() {
+        return numRooms;
+    }
+    public void setNumRooms(int numRooms) {
+        this.numRooms = numRooms;
+    }
 
     public void buildRoom() {
         numRooms++;
