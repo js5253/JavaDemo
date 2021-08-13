@@ -10,7 +10,7 @@ public class CarTest {
 
     @BeforeEach
     void assignCar() {
-        this.systemUnderTest = new Car(50, true, 4);
+        this.systemUnderTest = new Car(50, true, 4, 200);
     }
 
     @Test 
