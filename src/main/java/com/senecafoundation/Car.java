@@ -1,48 +1,57 @@
 package com.senecafoundation;
 
 public class Car {
-    // note that we assign a value when creating the variables
-    // these are default values
-    public static int MAX_RPM = 5000;
-    public Boolean isDoorOpen = false;
-    public int rpms = 0;
-    public String type = "GAS";
+    private Boolean isDoorOpen;
+    private int rpms;
+    private int windows;
 
-    //several ways to have parameters - method overloading is the simplest,
-    //where one function has a bunch of parameters
-    //and the other has none
-
-    //depending on whether there are parameters in the constructor, it will
-    //run the appropriate function
-    public Car(Boolean doorOpen, int rpm, String engineType, int maxRPM) {
-        rpms = rpm;
-        type = engineType;
-        isDoorOpen = doorOpen;
-        MAX_RPM = maxRPM;
+    public void setWindows(int windows) {
+        this.windows = windows;
     }
-    public Car() {
-        //because we're not passing any parameters,
-        //we'll just use the default values
-
+    public int getWindows() {
+        return windows;
     }
 
-    public void increaseRpm(int rpm) {
-        if (MAX_RPM < rpms) {
-            rpms += rpm;
+    public Boolean getIsDoorOpen() {
+        return isDoorOpen;
+    }
+    public void setIsDoorOpen(Boolean isDoorOpen) {
+        this.isDoorOpen = isDoorOpen;
+    }
+
+    public int getRpms() {
+        return rpms;
+    }
+
+    public void setRpms(int rpms) {
+        if (rpms > 200) {
+            System.out.println("That's too many rpms, it would break the car");
+            this.rpms = 0; 
         }
-
+        else {
+            this.rpms = rpms;  
+        }
     }
 
-    public void decreaseRpm(int rpm) {
-        rpms -= rpm;
+    public Car(int rpmFromUser, Boolean isDoorOpenFromUser, int windowsFromUser) {
+        this.rpms = rpmFromUser;
+        this.isDoorOpen = isDoorOpenFromUser;
+        this.windows = windowsFromUser;
+    }
+
+    public void increaseRpm(int rpmfromuser) {
+        this.rpms += rpmfromuser;
+
+    public void decreaseRpm(int rpmfromuser) {
+        this.rpms -= rpmfromuser;
     }
 
     public void openDoor() {
-        isDoorOpen = true;
+        this.isDoorOpen = true;
     }
 
     public void closeDoor() {
-        isDoorOpen = false;
+        this.isDoorOpen = false;
     }
 
     // example of a method that should remain in any car

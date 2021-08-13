@@ -8,6 +8,11 @@ public class Grill {
         // temperature = temp;
         // power = false;
     }
+
+    static int MAX_POWER = 1000;
+
+    static int MAX_TEMP = 500;
+
     public void increaseTemp(int temp) {
         temperature += temp;
     }
