@@ -41,7 +41,6 @@ public class Car {
 
     public void increaseRpm(int rpmfromuser) {
         this.rpms += rpmfromuser;
-    }
 
     public void decreaseRpm(int rpmfromuser) {
         this.rpms -= rpmfromuser;
@@ -53,5 +52,13 @@ public class Car {
 
     public void closeDoor() {
         this.isDoorOpen = false;
+    }
+
+    // example of a method that should remain in any car
+    public void outputDetails() {
+        System.out.println("Car Details");
+        System.out.println("RPM: " + rpms);
+        System.out.println("Door Open: " + isDoorOpen);
+        System.out.println("This car's max RPMs: " + MAX_RPM);
     }
 }
