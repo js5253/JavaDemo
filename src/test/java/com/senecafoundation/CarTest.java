@@ -10,30 +10,29 @@ public class CarTest {
 
     @BeforeEach
     void assignCar() {
-        this.systemUnderTest = new Car(
-        );
+        this.systemUnderTest = new Car(50, true, 4);
     }
 
     @Test 
     void testCarCreate() {
-        assertEquals(0, this.systemUnderTest.rpms);
-        assertEquals(null, this.systemUnderTest.isDoorOpen);
+        assertEquals(50, this.systemUnderTest.getRpms());
+        assertEquals(true, this.systemUnderTest.getIsDoorOpen());
     }
 
     @Test
     void testRPM() {
         this.systemUnderTest.increaseRpm(5);
-        assertEquals(this.systemUnderTest.rpms, 5);
+        assertEquals(this.systemUnderTest.getRpms(), 55);
         this.systemUnderTest.decreaseRpm(3);
-        assertEquals(this.systemUnderTest.rpms, 2);
+        assertEquals(this.systemUnderTest.getRpms(), 52);
     }
 
     @Test
     void testDoor() {
         this.systemUnderTest.openDoor();
-        assertEquals(this.systemUnderTest.isDoorOpen, true);
+        assertEquals(this.systemUnderTest.getIsDoorOpen(), true);
         this.systemUnderTest.closeDoor();
-        assertEquals(this.systemUnderTest.isDoorOpen, false);
+        assertEquals(this.systemUnderTest.getIsDoorOpen(), false);
     }
 
     
