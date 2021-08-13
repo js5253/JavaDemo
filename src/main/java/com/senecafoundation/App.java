@@ -6,7 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Car car = new Car();
+        Tesla tesla = new Tesla(); //this car will use the default values (door not open, 0 rpm, gas, 5000 rpm)
         Grill grill = new Grill();
         Microwave microwave = new Microwave();
         House house = new House();
