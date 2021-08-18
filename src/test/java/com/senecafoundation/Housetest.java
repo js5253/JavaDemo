@@ -1,12 +1,12 @@
-package com.senecafoundation;
+
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 
- public class RoomTest {
+ public class HouseTest {
 
-    private Room systemUnderTest;
+    private House systemUnderTest;
 
     @BeforeEach
     void assignRoom() {
